@@ -1,0 +1,39 @@
+.episodios {
+  --columns: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-gap: 20px;
+  max-width: calc(100% - 40px);
+  margin: 40px auto;
+  padding: 0 40px;
+}
+
+h1 {
+  padding: 0 20px;
+  font-size: 3.3rem;
+  line-height: 3.3rem;
+  margin: 0;
+}
+
+h1 span {
+  display: block;
+  margin-top: 10px;
+}
+
+@media (min-width: 800px) {
+  .episodios {
+    --columns: 2;
+    max-width: 1280px;
+  }
+
+  h1 span {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .episodios {
+    --columns: 3;
+  }
+}

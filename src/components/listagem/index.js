@@ -3,6 +3,8 @@ import BUSCADOR_DE_EPISODIOS from '../../factories/episodios.js';
 
 import Episodio from '../episodio/index';
 
+import './style.css';
+
 const Listagem = ({match, history}) => {
   const { busca } = match.params;
   const [ episodios, setEpisodios ] = useState([]);
@@ -15,7 +17,7 @@ const Listagem = ({match, history}) => {
 
   return (
     <Fragment>
-      <h1>Podcasts sobre: {busca}</h1>
+      <h1>Podcasts sobre: <span>{busca}</span></h1>
       <div className="episodios">
         {
           episodios

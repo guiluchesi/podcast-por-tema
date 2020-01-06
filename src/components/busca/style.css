@@ -1,0 +1,13 @@
+form input {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  border: 0;
+}
+
+@media (min-width: 600px) {
+  form input {
+    min-width: 550px;
+    text-align: center;
+  }
+}

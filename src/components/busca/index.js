@@ -1,6 +1,8 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
+import './style.css'
+
 const search = (e, history) => {
   e.preventDefault();
   const busca = e.target.tema.value

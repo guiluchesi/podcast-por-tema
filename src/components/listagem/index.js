@@ -13,6 +13,8 @@ const Listagem = ({match, history}) => {
     BUSCADOR_DE_EPISODIOS.porTag(busca)
       .then(({records}) => setEpisodios(records))
       .catch(err => console.error(err));
+
+    document.title = `Busca de Podcast sobre ${busca}`;
   }, [busca]);
 
   return (
